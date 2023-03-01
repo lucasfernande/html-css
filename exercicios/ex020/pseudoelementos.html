@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudo elementos</title>
+
+        <style>
+
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            ul {
+                list-style: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: darkviolet;
+            }
+
+            a:visited {
+                color: darkred;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            a:active {
+                color: cornflowerblue;
+            }
+            
+            a::before {
+                content: '> ';
+            }
+
+            a::after {
+                content: ' <';
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>Personalizando links</h1>
+
+        <ul>
+            <li><a href="https://youtube.com">Youtube</a></li>
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="https://instagram.com">Instagram</a></li>
+        </ul>
+        
+    </body>
+
+</html>

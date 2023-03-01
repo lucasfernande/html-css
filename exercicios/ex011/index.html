@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Imagens dinâmicas</title>
+
+        <style>
+
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+            html {
+                font-family: 'Ubuntu', sans-serif;
+            }
+
+            picture {
+                width: 100%;
+            }
+            
+            img {
+                width: 80%;
+                display: block;
+                margin: 0 auto;
+            }
+
+        </style>
+
+    </head>
+    
+    <body>
+
+        <h1>Fotos que se adaptam</h1>
+        <p>Diminua e aumente o tamanho do navegador para testar.</p>
+
+        <picture>
+            <source media="(max-width: 750px)" srcset="img/foto-p.jpg" type="image/jpeg">
+            <source media="(max-width: 1050px)" srcset="img/foto-m.jpg" type="image/jpeg">
+            <img src="img/foto-full.jpg" alt="Banner">
+        </picture>
+        
+        <h1>Reproduzindo áudios</h1>
+        <audio preload="metadata" controls>
+            <source src="media/audioteste.mp3" type="audio/mpeg">
+            <source src="media/audioteste.ogg" type="audio/ogg">
+            <source src="media/audioteste.wav" type="audio/wav">
+            <p>Infelizmente seu navegador não suporta áudio, clique para <a href="media/audioteste.mp3" download="audioteste.mp3" type="audio/mpeg">baixar o arquivo</a></p>
+        </audio>
+
+    </body>
+
+</html>

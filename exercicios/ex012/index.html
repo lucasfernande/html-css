@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vídeos</title>
+
+        <style> 
+        
+            video {
+                width: 500px;
+            }    
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>Inserindo vídeos hospedados localmente</h1>
+        <p>Este vídeo está no meu pc:</p>
+
+        <video controls>
+            <source src="media/videoteste.webm" type="video/webm">
+            <source src="media/videoteste.mp4" type="video/mp4">
+            <source src="media/videoteste.ogg" type="video/ogv">
+            <p>Seu navegador não suporta vídeos</p>
+        </video>
+
+        <h1>Inserindo vídeos hospedados externamente</h1>
+        <p>Este vídeo está no Youtube:</p>
+
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/sV83D4uIfAM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+    </body>
+
+</html>

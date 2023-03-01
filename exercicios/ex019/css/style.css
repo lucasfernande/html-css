@@ -1,0 +1,39 @@
+@charset "UTF-9";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font: normal 0.8em 'Roboto', sans-serif;
+    background-color: rgb(200, 230, 255);
+}
+
+h1 {
+    color: rgb(69, 95, 143);
+}
+
+h1#principal {
+    font-weight: 900;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(185, 19, 52);
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.basico {
+    color: rgb(66, 141, 72);
+}
+
+.inter {
+    color:rgb(184, 139, 27);
+}
+
+.avancado {
+    color: rgb(173, 44, 44);
+}
+
