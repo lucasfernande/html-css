@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanho das Imagens de Fundo</title>
+
+    <style>
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            /*
+            background-color: bisque;
+            background-image: url('img/wallpaper002.jpg');
+            background-position: center top;
+            background-repeat: no-repeat;
+            */
+
+            background: darkgray url('img/wallpaper002.jpg') no-repeat center top;
+            background-size: cover; 
+            
+            /* Redimensiona a imagem de fundo para cobrir todo o contêiner, mesmo que seja necessário esticar a imagem ou cortar um pouco de uma das bordas */
+
+            /* background-size: contain;
+            Não corta a imagem, ela fica totalmente visível e é redimensionada conforme o tamanho da janela */
+
+        }   
+
+        main {
+            background-color: white;
+            width: 400px;
+            padding: 15px;
+            margin: auto;
+            border: 2px solid darkblue;
+            border-radius: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id est, obcaecati quos repellat eveniet quibusdam
+            commodi excepturi qui voluptas ipsum dolores voluptatum quo asperiores eos omnis mollitia rerum deserunt
+            laudantium! Magni, facere nemo officia ratione optio eveniet reprehenderit odit sit facilis ad accusantium
+            quisquam atque. Iste unde illo voluptatem dicta maxime, vitae officia quo accusamus ab officiis optio libero
+            sequi, assumenda qui. Non beatae dolorum esse, sapiente suscipit, quisquam libero, rem aut itaque quae
+            veritatis magnam incidunt quibusdam voluptate doloremque commodi! Distinctio, commodi? Laboriosam, rem ab
+            ullam quos minima sapiente molestiae consectetur aspernatur officia voluptates eligendi nisi velit
+            voluptatem iusto!</p>
+    </main>
+</body>
+
+</html>
