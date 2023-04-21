@@ -11,14 +11,14 @@
 <body>
 
     <h1>Login</h1>
-    <form action="" method="POST">
+    <form action="" method="POST" autocomplete="on">
         <p>
             <label for="usuario">Usuário: </label>
-            <input type="text" name="usuario" id="usuario" required>
+            <input type="text" name="usuario" id="usuario" required minlength="5" placeholder="Ex: joaozinho" autocomplete="username">
         </p>
         <p>
             <label for="senha">Senha: </label>
-            <input type="password" name="senha" id="senha" required>
+            <input type="password" name="senha" id="senha" required minlength="8" maxlength="20" autocomplete="current-password">
         </p>
         <p>
             <input type="submit" value="Enviar">
