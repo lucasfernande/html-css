@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Menu Responsivo</title>
 </head>
@@ -12,7 +13,8 @@
 <body>
     <header>
         <h1>Site</h1>
-        <menu>
+        <span id="hamburguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -33,6 +35,20 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat fugiat necessitatibus nostrum vero. Minima ipsum nesciunt dolorum quam, id in perferendis tenetur laborum suscipit mollitia doloribus. Saepe enim aliquam distinctio quis deserunt autem id asperiores maiores perferendis doloribus totam, expedita minima dolore laborum nobis natus quibusdam eum. Laborum dolore placeat ut architecto veritatis, optio numquam recusandae sapiente pariatur vitae necessitatibus veniam aliquam sit. Nostrum deserunt eligendi excepturi ab et quo totam vero commodi, eius earum?</p>
         </article>
     </main>
+
+    <script>
+
+        function clickMenu() {
+            let itens = document.querySelector('#itens')
+            
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+    </script>
 
 </body>
 

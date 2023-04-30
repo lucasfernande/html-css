@@ -21,9 +21,23 @@ header > h1 {
     padding: 10px;
 }
 
-menu {
-    background-color: #4B3F72;
+span#hamburguer {
+    color: white;
+    background-color: #341f88;
+    text-align: center;
+    padding: 10px;
     display: block;
+    cursor: pointer;
+    transition: .25s;
+}
+
+span#hamburguer:hover {
+    background-color: #533dab;
+}
+
+menu {
+    background-color: #6d6490;
+    display: none;
 }
 
 menu > ul {
